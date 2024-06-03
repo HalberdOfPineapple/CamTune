@@ -1,0 +1,13 @@
+seed: 11126
+batch_size: 4
+init_design: sobol
+  
+optimizer: turbo
+optimizer_params:
+  num_init: 20
+  acqf: 'ts'
+  save_tr: True
+  turbo_state_params:
+      failure_tolerance: 5
+      success_tolerance: 3
+      length_min: "0.5**7"

@@ -1,0 +1,764 @@
+{
+    "autovacuum": {
+        "default": "on",
+        "context": "superuser",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "autovacuum_analyze_scale_factor": {
+        "default": 0.1,
+        "context": "sighup",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 100.0
+    },
+    "autovacuum_analyze_threshold": {
+        "default": 50,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000
+    },
+    "autovacuum_freeze_max_age": {
+        "default": 200000000,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 100000,
+        "max": 2000000000
+    },
+    "autovacuum_max_workers": {
+        "default": 3,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 10000
+    },
+    "autovacuum_multixact_freeze_max_age": {
+        "default": 400000000,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 10000,
+        "max": 2000000000
+    },
+    "autovacuum_naptime": {
+        "default": 60,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 2147483,
+        "unit": "s"
+    },
+    "autovacuum_vacuum_cost_delay": {
+        "default": 2,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": -1,
+        "max": 100,
+        "unit": "ms"
+    },
+    "autovacuum_vacuum_cost_limit": {
+        "default": -1,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": -1,
+        "max": 10000
+    },
+    "autovacuum_vacuum_scale_factor": {
+        "default": 0.2,
+        "context": "sighup",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 100.0
+    },
+    "autovacuum_vacuum_threshold": {
+        "default": 50,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 2147483647
+    },
+    "autovacuum_work_mem": {
+        "default": -1,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": -1,
+        "max": 1048576,
+        "unit": "KB"
+    },
+    "backend_flush_after": {
+        "default": 0,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 256,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "bgwriter_delay": {
+        "default": 200,
+        "context": "user",
+        "scope": "sighup",
+        "type": "integer",
+        "min": 10,
+        "max": 4000,
+        "unit": "ms"
+    },
+    "bgwriter_flush_after": {
+        "default": 64,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 256,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "bgwriter_lru_maxpages": {
+        "default": 100,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000
+    },
+    "bgwriter_lru_multiplier": {
+        "default": 2.0,
+        "context": "sighup",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 10.0
+    },
+    "checkpoint_completion_target": {
+        "default": 0.9,
+        "context": "sighup",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 1.0
+    },
+    "checkpoint_flush_after": {
+        "default": 32,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 256,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "checkpoint_timeout": {
+        "default": 300,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 30,
+        "max": 86400,
+        "unit": "s"
+    },
+    "commit_delay": {
+        "default": 0,
+        "context": "superuser",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 4096
+    },
+    "commit_siblings": {
+        "default": 5,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 16
+    },
+    "cpu_index_tuple_cost": {
+        "default": 0.005,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 4
+    },
+    "cpu_operator_cost": {
+        "default": 0.0025,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 4
+    },
+    "cpu_tuple_cost": {
+        "default": 0.01,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 4
+    },
+    "cursor_tuple_fraction": {
+        "default": 0.1,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 1.0
+    },
+    "data_sync_retry": {
+        "default": "off",
+        "context": "postmaster",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "deadlock_timeout": {
+        "default": 1000,
+        "context": "superuser",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 5000,
+        "unit": "ms"
+    },
+    "default_statistics_target": {
+        "default": 100,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 5120
+    },
+    "default_transaction_deferrable": {
+        "default": "off",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "effective_cache_size": {
+        "default": 524288,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 1000000,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "effective_io_concurrency": {
+        "default": 1,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 512
+    },
+    "enable_bitmapscan": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_hashagg": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_hashjoin": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_indexonlyscan": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_indexscan": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_material": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_mergejoin": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_nestloop": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_seqscan": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_sort": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "enable_tidscan": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "from_collapse_limit": {
+        "default": 8,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 50
+    },
+    "full_page_writes": {
+        "default": "on",
+        "context": "sighup",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "geqo": {
+        "default": "on",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "geqo_effort": {
+        "default": 5,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 10
+    },
+    "geqo_generations": {
+        "default": 0,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000
+    },
+    "geqo_pool_size": {
+        "default": 0,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000
+    },
+    "geqo_seed": {
+        "default": 0.0,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 1.0
+    },
+    "geqo_selection_bias": {
+        "default": 2.0,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 1.5,
+        "max": 2.0
+    },
+    "geqo_threshold": {
+        "default": 12,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 2,
+        "max": 50
+    },
+    "join_collapse_limit": {
+        "default": 8,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 50
+    },
+    "maintenance_work_mem": {
+        "default": 65536,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1024,
+        "max": 1048576,
+        "unit": "KB"
+    },
+    "max_connections": {
+        "default": 100,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 5,
+        "max": 10000
+    },
+    "max_files_per_process": {
+        "default": 1000,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 64,
+        "max": 50000
+    },
+    "max_locks_per_transaction": {
+        "default": 64,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 10,
+        "max": 1024
+    },
+    "max_parallel_workers_per_gather": {
+        "default": 0,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 256
+    },
+    "max_pred_locks_per_transaction": {
+        "default": 64,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 10,
+        "max": 1024
+    },
+    "max_prepared_transactions": {
+        "default": 0,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1024
+    },
+    "max_stack_depth": {
+        "default": 100,
+        "context": "superuser",
+        "scope": "global",
+        "type": "integer",
+        "min": 100,
+        "max": 7680,
+        "unit": "KB"
+    },
+    "max_wal_size": {
+        "default": 1024,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 32,
+        "max": 8192,
+        "unit": "MB"
+    },
+    "max_worker_processes": {
+        "default": 8,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 256
+    },
+    "min_wal_size": {
+        "default": 80,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 32,
+        "max": 128,
+        "unit": "MB"
+    },
+    "old_snapshot_threshold": {
+        "default": -1,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": -1,
+        "max": 86400
+    },
+    "parallel_setup_cost": {
+        "default": 1000.0,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 2500
+    },
+    "parallel_tuple_cost": {
+        "default": 0.1,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 4
+    },
+    "quote_all_identifiers": {
+        "default": "off",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "random_page_cost": {
+        "default": 4.0,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 8
+    },
+    "seq_page_cost": {
+        "default": 1.0,
+        "context": "user",
+        "scope": "global",
+        "type": "float",
+        "min": 0.0,
+        "max": 4
+    },
+    "shared_buffers": {
+        "default": 32678,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": 128,
+        "max": 1000000,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "temp_buffers": {
+        "default": 1024,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 100,
+        "max": 65536,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "vacuum_cost_delay": {
+        "default": 0,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 100
+    },
+    "vacuum_cost_limit": {
+        "default": 200,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 10000
+    },
+    "vacuum_cost_page_dirty": {
+        "default": 20,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 10000
+    },
+    "vacuum_cost_page_hit": {
+        "default": 1,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 10000
+    },
+    "vacuum_cost_page_miss": {
+        "default": 10,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 10000
+    },
+    "vacuum_freeze_min_age": {
+        "default": 50000000,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000000000
+    },
+    "vacuum_freeze_table_age": {
+        "default": 150000000,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 2000000000
+    },
+    "vacuum_multixact_freeze_min_age": {
+        "default": 5000000,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 1000000000
+    },
+    "vacuum_multixact_freeze_table_age": {
+        "default": 150000000,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 2000000000
+    },
+    "wal_buffers": {
+        "default": -1,
+        "context": "postmaster",
+        "scope": "global",
+        "type": "integer",
+        "min": -1,
+        "max": 262143,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "wal_compression": {
+        "default": "off",
+        "context": "superuser",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "wal_log_hints": {
+        "default": "off",
+        "context": "user",
+        "scope": "global",
+        "type": "enum",
+        "enum_values": [
+            "on",
+            "off"
+        ]
+    },
+    "wal_writer_delay": {
+        "default": 200,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 1,
+        "max": 10000,
+        "unit": "ms"
+    },
+    "wal_writer_flush_after": {
+        "default": 128,
+        "context": "sighup",
+        "scope": "global",
+        "type": "integer",
+        "min": 0,
+        "max": 32768,
+        "byte_unit": 8,
+        "unit": "KB"
+    },
+    "work_mem": {
+        "default": 4096,
+        "context": "user",
+        "scope": "global",
+        "type": "integer",
+        "min": 64,
+        "max": 8192,
+        "unit": "KB"
+    }
+}

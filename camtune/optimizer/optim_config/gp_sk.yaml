@@ -1,0 +1,7 @@
+seed: 11126
+batch_size: 4
+init_design: lhs
+
+optimizer: gp-sk
+optimizer_params:
+  num_init: 20

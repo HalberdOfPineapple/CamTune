@@ -1,0 +1,442 @@
+{
+    "wal_level": [
+        0.0,
+        0.6205309629440308
+    ],
+    "bgwriter_lru_maxpages": [
+        209.92910861968994,
+        935.8558654785156
+    ],
+    "geqo": [
+        0.0,
+        0.4499053657054901
+    ],
+    "lo_compat_privileges": [
+        0.3549451231956482,
+        1.0
+    ],
+    "archive_timeout": [
+        0.0,
+        763691135.2887572
+    ],
+    "enable_nestloop": [
+        0.6193909049034119,
+        1.0
+    ],
+    "autovacuum_naptime": [
+        120711.2673656866,
+        1679625.9510383606
+    ],
+    "vacuum_freeze_min_age": [
+        485660076.1413574,
+        1000000000.0
+    ],
+    "vacuum_cost_page_miss": [
+        976.3520210981369,
+        8235.6196641922
+    ],
+    "geqo_generations": [
+        1307.0435791015625,
+        4096.0
+    ],
+    "max_replication_slots": [
+        13020.825329303741,
+        34917.83164228499
+    ],
+    "max_wal_size": [
+        32.0,
+        3460.993639945984
+    ],
+    "cpu_index_tuple_cost": [
+        0.8126031756401062,
+        12.427431106567383
+    ],
+    "statement_timeout": [
+        0.0,
+        7707.70654296875
+    ],
+    "enable_indexscan": [
+        0.008877434767782688,
+        0.7348042130470276
+    ],
+    "from_collapse_limit": [
+        1.0,
+        193.55938971042633
+    ],
+    "max_locks_per_transaction": [
+        193.93133556842804,
+        512.0
+    ],
+    "max_pred_locks_per_transaction": [
+        10.0,
+        329.4592077732086
+    ],
+    "autovacuum": [
+        0.0,
+        0.6510003209114075
+    ],
+    "effective_io_concurrency": [
+        391.6776776313782,
+        1000.0
+    ],
+    "standard_conforming_strings": [
+        0.1453961580991745,
+        0.8713229298591614
+    ],
+    "cpu_tuple_cost": [
+        4.81433629989624,
+        10.0
+    ],
+    "enable_sort": [
+        0.056979868561029434,
+        0.7829065918922424
+    ],
+    "synchronize_seqscans": [
+        0.21330954134464264,
+        0.9392362833023071
+    ],
+    "gin_fuzzy_search_limit": [
+        41689.1328125,
+        131072.0
+    ],
+    "autovacuum_work_mem": [
+        53838.39509519935,
+        815028.4647719264
+    ],
+    "cursor_tuple_fraction": [
+        0.3085785508155823,
+        1.0
+    ],
+    "commit_siblings": [
+        290.8220589160919,
+        586.8878960609436
+    ],
+    "effective_cache_size": [
+        278149.0472370982,
+        1039337.6963103414
+    ],
+    "dynamic_shared_memory_type": [
+        0.0,
+        1.1028631925582886
+    ],
+    "autovacuum_vacuum_cost_delay": [
+        -1.0,
+        44.654079139232635
+    ],
+    "enable_bitmapscan": [
+        0.0730716735124588,
+        0.7989984154701233
+    ],
+    "log_min_duration_statement": [
+        38103.655640780926,
+        65536.0
+    ],
+    "autovacuum_vacuum_threshold": [
+        201.6370391845703,
+        512.0
+    ],
+    "maintenance_work_mem": [
+        1024.0,
+        399689.2666320801
+    ],
+    "transaction_deferrable": [
+        0.2506653964519501,
+        0.9765921235084534
+    ],
+    "checkpoint_flush_after": [
+        179.2570037841797,
+        217.8979949951172
+    ],
+    "enable_indexonlyscan": [
+        0.36166509985923767,
+        1.0
+    ],
+    "vacuum_multixact_freeze_table_age": [
+        939692020.4162598,
+        2000000000.0
+    ],
+    "parallel_setup_cost": [
+        3077.4986743927,
+        5000.0
+    ],
+    "autovacuum_multixact_freeze_max_age": [
+        483739655.83875775,
+        1935585940.091014
+    ],
+    "autovacuum_freeze_max_age": [
+        100000.0,
+        923520747.5066185
+    ],
+    "temp_buffers": [
+        39787.56388115883,
+        39847.60493826866
+    ],
+    "wal_compression": [
+        3.301640033721924,
+        3.386533260345459
+    ],
+    "enable_seqscan": [
+        0.6070398688316345,
+        0.6256110668182373
+    ],
+    "log_rotation_size": [
+        458913.6875,
+        1048576.0
+    ],
+    "autovacuum_vacuum_cost_limit": [
+        4567.0939092338085,
+        10000.0
+    ],
+    "wal_log_hints": [
+        0.0,
+        0.4367184042930603
+    ],
+    "bgwriter_lru_multiplier": [
+        1.4279982447624207,
+        8.687265515327454
+    ],
+    "geqo_pool_size": [
+        744.7855834960938,
+        748.5023803710938
+    ],
+    "bgwriter_delay": [
+        2284.133020043373,
+        4000.0
+    ],
+    "wal_writer_flush_after": [
+        0.0,
+        23320.330078125
+    ],
+    "vacuum_cost_delay": [
+        45.85963189601898,
+        100.0
+    ],
+    "default_statistics_target": [
+        1266.6387030035257,
+        8525.180493831635
+    ],
+    "geqo_threshold": [
+        303.51655673980713,
+        512.0
+    ],
+    "autovacuum_analyze_threshold": [
+        0.0,
+        365.2987976074219
+    ],
+    "default_transaction_isolation": [
+        1.2625567317008972,
+        3.0
+    ],
+    "enable_tidscan": [
+        0.0,
+        0.5188632607460022
+    ],
+    "vacuum_cost_page_hit": [
+        233.9320071041584,
+        7493.199706077576
+    ],
+    "autovacuum_analyze_scale_factor": [
+        0.0,
+        45.60389220714569
+    ],
+    "ignore_system_indexes": [
+        0.7528761625289917,
+        0.7910066843032837
+    ],
+    "shared_buffers": [
+        27775.23405480385,
+        122912.29305458069
+    ],
+    "enable_material": [
+        0.5889668464660645,
+        1.0
+    ],
+    "bgwriter_flush_after": [
+        177.1477508544922,
+        217.87875366210938
+    ],
+    "geqo_selection_bias": [
+        1.544981300830841,
+        1.907944679260254
+    ],
+    "transform_null_equals": [
+        0.0,
+        0.5435869693756104
+    ],
+    "geqo_effort": [
+        4.417515695095062,
+        8.154285609722137
+    ],
+    "min_wal_size": [
+        32.0,
+        149.01729774475098
+    ],
+    "enable_hashagg": [
+        0.36078161001205444,
+        1.0
+    ],
+    "checkpoint_timeout": [
+        30.0,
+        50098.98184597492
+    ],
+    "zero_damaged_pages": [
+        0.8882977366447449,
+        0.8892051577568054
+    ],
+    "vacuum_cost_limit": [
+        2751.510570257902,
+        10000.0
+    ],
+    "track_activities": [
+        0.0,
+        0.5761804580688477
+    ],
+    "restart_after_crash": [
+        0.21902264654636383,
+        0.9449493885040283
+    ],
+    "wal_buffers": [
+        69350.5546875,
+        259647.890625
+    ],
+    "vacuum_freeze_table_age": [
+        1393899798.3932495,
+        2000000000.0
+    ],
+    "commit_delay": [
+        36079.803109169006,
+        48062.84010410309
+    ],
+    "wal_writer_delay": [
+        1905.5716130435467,
+        9164.112956881523
+    ],
+    "vacuum_multixact_freeze_min_age": [
+        0.0,
+        701955497.2648621
+    ],
+    "backend_flush_after": [
+        0.0,
+        114.22567749023438
+    ],
+    "huge_pages": [
+        1.1018120050430298,
+        2.0
+    ],
+    "work_mem": [
+        15853.76445388794,
+        63381.641078948975
+    ],
+    "checkpoint_completion_target": [
+        0.0,
+        0.42794784903526306
+    ],
+    "max_files_per_process": [
+        1238.8509616851807,
+        4096.0
+    ],
+    "full_page_writes": [
+        0.17848393321037292,
+        0.9044106602668762
+    ],
+    "max_worker_processes": [
+        0.0,
+        131.62445068359375
+    ],
+    "max_prepared_transactions": [
+        0.0,
+        136035.13731515408
+    ],
+    "wal_retrieve_retry_interval": [
+        45288.88981446624,
+        45424.99760353565
+    ],
+    "seq_page_cost": [
+        11.008812487125397,
+        39.35740888118744
+    ],
+    "enable_mergejoin": [
+        0.253272145986557,
+        0.9791988730430603
+    ],
+    "wal_receiver_timeout": [
+        38211.55078125,
+        65536.0
+    ],
+    "vacuum_cost_page_dirty": [
+        6497.235298156738,
+        6506.309509277344
+    ],
+    "enable_hashjoin": [
+        0.0,
+        0.5194396376609802
+    ],
+    "syslog_split_messages": [
+        0.23164799809455872,
+        0.957574725151062
+    ],
+    "max_parallel_workers_per_gather": [
+        0.0,
+        380.083740234375
+    ],
+    "quote_all_identifiers": [
+        0.0635923519730568,
+        0.7895191311836243
+    ],
+    "constraint_exclusion": [
+        0.10213395953178406,
+        1.5539875030517578
+    ],
+    "wal_sender_timeout": [
+        443640.50924777985,
+        951382.6489448547
+    ],
+    "cpu_operator_cost": [
+        1.6638206243515015,
+        4.0
+    ],
+    "autovacuum_vacuum_scale_factor": [
+        50.31760334968567,
+        100.0
+    ],
+    "default_transaction_deferrable": [
+        0.0,
+        0.5966834425926208
+    ],
+    "allow_system_table_mods": [
+        0.1388721615076065,
+        0.864798903465271
+    ],
+    "random_page_cost": [
+        31.185653805732727,
+        100.0
+    ],
+    "parallel_tuple_cost": [
+        15.62579345703125,
+        16.0
+    ],
+    "autovacuum_max_workers": [
+        1.0,
+        3.6759169697761536
+    ],
+    "gin_pending_list_limit": [
+        48472.053039073944,
+        107064.12508201599
+    ],
+    "max_stack_depth": [
+        2006.9429659843445,
+        2159.39921438694
+    ],
+    "synchronous_commit": [
+        0.41230905055999756,
+        3.3160159587860107
+    ],
+    "join_collapse_limit": [
+        1.0,
+        352.9273855686188
+    ],
+    "deadlock_timeout": [
+        1.0,
+        3348.232419550419
+    ]
+}

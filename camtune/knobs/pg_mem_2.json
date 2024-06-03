@@ -1,0 +1,21 @@
+{
+    "shared_buffers": {
+        "byte_unit": 8,
+        "context": "postmaster",
+        "default": 16384,
+        "max": 131072,
+        "min": 16,
+        "restart": "true",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "work_mem": {
+        "context": "user",
+        "default": 4096,
+        "max": 65536,
+        "min": 64,
+        "restart": "false",
+        "type": "integer",
+        "unit": "KB"
+    }
+}

@@ -1,0 +1,9 @@
+seed: 11126
+batch_size: 1
+  
+init_design: lhs
+num_init: 20
+
+optimizer: uniform
+optimizer_params:
+  method: lhs

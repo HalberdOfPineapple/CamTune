@@ -1,0 +1,23 @@
+seed: 11126
+batch_size: 4
+init_design: lhs
+
+optimizer: mcts-winter
+optimizer_params:
+  save_path: True
+  save_tr: True
+  leaf_size: 10
+
+  global_num_init: 20
+  local_num_init: 10
+  local_init_design: sobol
+  
+  local_jump_ratio: 0.3
+  local_low_tolerance: 2
+
+  local_optimizer_type: turbo
+  local_optimizer_params:
+    turbo_state_params:
+      failure_tolerance: 3
+      success_tolerance: 3
+      length_min: '0.5**4'

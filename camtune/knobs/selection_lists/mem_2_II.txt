@@ -1,0 +1,2 @@
+backend_flush_after
+maintenance_work_mem

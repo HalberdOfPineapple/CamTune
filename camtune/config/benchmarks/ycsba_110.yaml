@@ -1,0 +1,12 @@
+remote_mode: false
+online_mode: false
+perf_name: throughput
+perf_unit: rps
+
+benchmark: ycsba
+
+# saved locally
+knob_definitions: postgres_110.json
+knob_num: -1
+
+negate: false

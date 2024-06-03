@@ -1,0 +1,11 @@
+db_user: viktor
+
+pg_ctl: /usr/lib/postgresql/14/bin/pg_ctl
+pg_data: /var/lib/postgresql/14/main
+pg_server: /usr/lib/postgresql/14/bin/postgres
+pg_conf: /var/lib/postgresql/14/experiment/conf/tune_conf.conf
+pg_default_conf: /var/lib/postgresql/14/experiment/conf/default_conf.conf
+pg_sock: /var/run/postgresql/.s.PGSQL.543
+
+sys_user: viktor
+sys_pwd: "741286"

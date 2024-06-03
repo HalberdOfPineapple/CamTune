@@ -1,0 +1,15 @@
+db_type: pgsql
+remote_mode: false
+online_mode: false
+
+exec_mode: raw
+benchmark: TPCH
+scale_factor: 2.5
+use_pgbench: false
+
+perf_name: total_exec_time
+perf_unit: s
+negate: true
+
+knob_definitions: pg_tpch_50.json
+knob_num: -1

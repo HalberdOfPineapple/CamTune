@@ -1,0 +1,4 @@
+seed: 0
+batch_size: 1
+
+optimizer: uniform

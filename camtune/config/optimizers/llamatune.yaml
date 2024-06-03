@@ -1,0 +1,11 @@
+seed: 11126
+batch_size: 1
+init_design: lhs
+
+optimizer: llama
+optimizer_params:
+  le_low_dim: 16
+  bias_prob_sv: 0.2
+  quantization_factor: 10000
+  optimizer:
+    init_rand_samples: 15

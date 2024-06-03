@@ -1,0 +1,10 @@
+seed: 0
+batch_size: 4
+extern_init: false
+  
+init_design: lhs
+  
+optimizer: turbo
+optimizer_params:
+  num_init: 40
+  acqf: 'ts'

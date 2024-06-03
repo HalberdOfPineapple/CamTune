@@ -1,0 +1,40 @@
+{
+    "maintenance_work_mem": {
+        "type": "integer",
+        "default": 65536,
+        "min": 1024,
+        "max": 1048576,
+        "unit": "KB",
+        "context": "user",
+        "restart": "false"
+    },
+    "shared_buffers": {
+        "type": "integer",
+        "default": 16384,
+        "min": 16,
+        "max": 3355443,
+        "byte_unit": 8,
+        "unit": "kB",
+        "context": "postmaster",
+        "restart": "true"
+    },
+    "effective_cache_size": {
+        "type": "integer",
+        "default": 524288,
+        "min": 1,
+        "max": 1048576,
+        "byte_unit": 8,
+        "unit": "kB",
+        "context": "user",
+        "restart": "false"
+    },
+    "work_mem": {
+        "type": "integer",
+        "default": 4096,
+        "min": 64,
+        "max": 1048576,
+        "unit": "KB",
+        "context": "user",
+        "restart": "false"
+    }
+}

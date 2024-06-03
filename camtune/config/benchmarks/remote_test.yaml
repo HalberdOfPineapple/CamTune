@@ -1,0 +1,19 @@
+db_host: dev-cpu-wl446b.cl.cam.ac.uk
+ssh_key: /home/wl446/.ssh/cl_vm_ssh_b
+ssh_passphrase: "741286"
+
+db_type: pgsql
+remote_mode: True
+online_mode: false
+
+exec_mode: raw
+benchmark: TPCH
+scale_factor: 2.5
+use_pgbench: false
+
+perf_name: latency
+perf_unit: s
+negate: true
+
+knob_definitions: llamatune_90.json
+knob_num: -1

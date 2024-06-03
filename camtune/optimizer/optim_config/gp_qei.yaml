@@ -1,0 +1,7 @@
+seed: 0
+batch_size: 4
+
+optimizer: gp-bo
+optimizer_params:
+  acquisition: 'qei'
+  num_init: 40

@@ -1,0 +1,20 @@
+seed: 11126
+batch_size: 4
+init_design: sobol
+
+optimizer: mcts-winter
+optimizer_params:
+  global_num_init: 20
+  local_num_init: 20
+  leaf_size: 20
+  # save_path: True
+  save_tr: True
+  classifier_params:
+    kernel_type: 'rbf'
+    gamma_type: 'auto'
+  local_optimizer_type: turbo
+  local_optimizer_params:
+    turbo_state_params:
+      failure_tolerance: 5
+      success_tolerance: 3
+      length_min: "0.5**7"

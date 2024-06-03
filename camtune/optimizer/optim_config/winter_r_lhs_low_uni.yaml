@@ -1,0 +1,22 @@
+seed: 11126
+batch_size: 4
+init_design: lhs
+
+optimizer: mcts-winter
+optimizer_params:
+  global_num_init: 20
+  local_num_init: 20
+  leaf_size: 20
+  
+  classifier_params:
+    kernel_type: 'rbf'
+    gamma_type: 'auto'
+  local_optimizer_type: turbo
+  local_control_params:
+    real_mode: True
+  local_optimizer_params:
+    uniform: True
+    turbo_state_params:
+      failure_tolerance: 5
+      success_tolerance: 5
+      length_min: "0.5**4"

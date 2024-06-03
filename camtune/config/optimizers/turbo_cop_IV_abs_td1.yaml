@@ -1,0 +1,23 @@
+
+seed: 11126
+batch_size: 1
+init_design: lhs
+  
+optimizer: turbo
+optimizer_params:
+  save_tr: True
+  num_init: 20
+  acqf: 'ts'
+  use_copilot: True
+  copilot_params:
+    success_tolerance: 5
+    failure_tolerance: 3
+    tree_params:
+      temperature: 0.1
+      classifier_cls: 'base'
+      classifier_type: 'svm'
+      cluter_score_threshold: 0.1
+  turbo_state_params:
+    failure_tolerance: 5
+    success_tolerance: 3
+    length_min: '0.5**5'

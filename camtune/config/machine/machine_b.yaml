@@ -1,0 +1,3 @@
+db_host: dev-cpu-wl446b.cl.cam.ac.uk
+ssh_key: /home/wl446/.ssh/cl_vm_ssh_b
+ssh_passphrase: "741286"

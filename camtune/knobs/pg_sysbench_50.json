@@ -1,0 +1,473 @@
+{
+    "autovacuum_max_workers": {
+        "context": "postmaster",
+        "default": 3,
+        "max": 8,
+        "min": 1,
+        "restart": "true",
+        "type": "integer"
+    },
+    "autovacuum_naptime": {
+        "context": "sighup",
+        "default": 60,
+        "max": 2147483,
+        "min": 1,
+        "restart": "false",
+        "type": "integer",
+        "unit": "s"
+    },
+    "autovacuum_vacuum_cost_delay": {
+        "context": "sighup",
+        "default": 2,
+        "max": 100,
+        "min": -1,
+        "restart": "false",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "autovacuum_work_mem": {
+        "context": "sighup",
+        "default": -1,
+        "max": 1048576,
+        "min": -1,
+        "restart": "false",
+        "since": "9.4",
+        "type": "integer",
+        "unit": "KB"
+    },
+    "backend_flush_after": {
+        "byte_unit": 8,
+        "context": "user",
+        "default": 0,
+        "max": 256,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "bgwriter_delay": {
+        "context": "sighup",
+        "default": 200,
+        "max": 4000,
+        "min": 10,
+        "restart": "false",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "bgwriter_flush_after": {
+        "byte_unit": 8,
+        "context": "sighup",
+        "default": 64,
+        "max": 256,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "bgwriter_lru_maxpages": {
+        "context": "sighup",
+        "default": 100,
+        "max": 1000,
+        "min": 0,
+        "restart": "false",
+        "type": "integer"
+    },
+    "bgwriter_lru_multiplier": {
+        "context": "sighup",
+        "default": 2.0,
+        "max": 10.0,
+        "min": 0.0,
+        "restart": "false",
+        "type": "float"
+    },
+    "checkpoint_flush_after": {
+        "byte_unit": 8,
+        "context": "sighup",
+        "default": 32,
+        "max": 256,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "commit_siblings": {
+        "context": "user",
+        "default": 5,
+        "max": 1000,
+        "min": 0,
+        "restart": "false",
+        "type": "integer"
+    },
+    "cpu_index_tuple_cost": {
+        "context": "user",
+        "default": 0.005,
+        "max": 16,
+        "min": 0.0,
+        "restart": "false",
+        "type": "float"
+    },
+    "cpu_operator_cost": {
+        "context": "user",
+        "default": 0.0025,
+        "max": 4.0,
+        "min": 0.0,
+        "restart": "false",
+        "type": "float"
+    },
+    "deadlock_timeout": {
+        "context": "superuser",
+        "default": 1000,
+        "max": 5000,
+        "min": 1,
+        "scope": "global",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "default_transaction_isolation": {
+        "context": "user",
+        "default": "read committed",
+        "enum_values": [
+            "serializable",
+            "repeatable read",
+            "read committed",
+            "read uncommitted"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "effective_cache_size": {
+        "byte_unit": 8,
+        "context": "user",
+        "default": 524288,
+        "max": 1048576,
+        "min": 1,
+        "restart": "false",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "effective_io_concurrency": {
+        "context": "user",
+        "default": 1,
+        "max": 1000,
+        "min": 0,
+        "restart": "false",
+        "type": "integer"
+    },
+    "enable_hashjoin": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "enable_indexscan": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "enable_sort": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "from_collapse_limit": {
+        "context": "user",
+        "default": 8,
+        "max": 512,
+        "min": 1,
+        "restart": "false",
+        "type": "integer"
+    },
+    "full_page_writes": {
+        "context": "sighup",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "geqo": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "huge_pages": {
+        "context": "postmaster",
+        "default": "try",
+        "enum_values": [
+            "off",
+            "on",
+            "try"
+        ],
+        "restart": "true",
+        "since": "9.4",
+        "type": "enum"
+    },
+    "maintenance_work_mem": {
+        "context": "user",
+        "default": 65536,
+        "max": 1048576,
+        "min": 1024,
+        "restart": "false",
+        "type": "integer",
+        "unit": "KB"
+    },
+    "max_files_per_process": {
+        "context": "postmaster",
+        "default": 1000,
+        "max": 4096,
+        "min": 64,
+        "restart": "true",
+        "type": "integer"
+    },
+    "max_locks_per_transaction": {
+        "context": "postmaster",
+        "default": 64,
+        "max": 512,
+        "min": 10,
+        "restart": "true",
+        "type": "integer"
+    },
+    "max_parallel_workers_per_gather": {
+        "context": "user",
+        "default": 2,
+        "max": 1024,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer"
+    },
+    "max_pred_locks_per_transaction": {
+        "context": "postmaster",
+        "default": 64,
+        "max": 512,
+        "min": 10,
+        "restart": "true",
+        "type": "integer"
+    },
+    "max_prepared_transactions": {
+        "context": "postmaster",
+        "default": 0,
+        "max": 262143,
+        "min": 0,
+        "restart": "true",
+        "type": "integer"
+    },
+    "max_stack_depth": {
+        "context": "superuser",
+        "default": 100,
+        "max": 7680,
+        "min": 100,
+        "restart": "false",
+        "type": "integer",
+        "unit": "KB"
+    },
+    "max_wal_size": {
+        "context": "sighup",
+        "default": 1024,
+        "max": 8192,
+        "min": 32,
+        "restart": "false",
+        "since": "9.5",
+        "type": "integer",
+        "unit": "MB"
+    },
+    "max_worker_processes": {
+        "context": "postmaster",
+        "default": 8,
+        "max": 256,
+        "min": 0,
+        "restart": "true",
+        "since": "9.4",
+        "type": "integer"
+    },
+    "parallel_setup_cost": {
+        "context": "user",
+        "default": 1000.0,
+        "max": 5000,
+        "min": 0.0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "float"
+    },
+    "parallel_tuple_cost": {
+        "context": "user",
+        "default": 0.1,
+        "max": 16,
+        "min": 0.0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "float"
+    },
+    "seq_page_cost": {
+        "context": "user",
+        "default": 1.0,
+        "max": 100.0,
+        "min": 0.0,
+        "restart": "false",
+        "type": "float"
+    },
+    "shared_buffers": {
+        "byte_unit": 8,
+        "context": "postmaster",
+        "default": 16384,
+        "max": 131072,
+        "min": 16,
+        "restart": "true",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "statement_timeout": {
+        "context": "user",
+        "default": 0,
+        "max": 65536,
+        "min": 0,
+        "restart": "false",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "synchronize_seqscans": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "synchronous_commit": {
+        "context": "user",
+        "default": "on",
+        "enum_values": [
+            "local",
+            "remote_write",
+            "remote_apply",
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "type": "enum"
+    },
+    "temp_buffers": {
+        "byte_unit": 8,
+        "context": "user",
+        "default": 1024,
+        "max": 65536,
+        "min": 100,
+        "restart": "false",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "vacuum_cost_delay": {
+        "context": "user",
+        "default": 0.0,
+        "max": 100.0,
+        "min": 0.0,
+        "restart": "false",
+        "type": "float",
+        "unit": "ms"
+    },
+    "vacuum_cost_limit": {
+        "context": "user",
+        "default": 200,
+        "max": 10000,
+        "min": 1,
+        "restart": "false",
+        "type": "integer"
+    },
+    "vacuum_cost_page_dirty": {
+        "context": "user",
+        "default": 20,
+        "max": 10000,
+        "min": 0,
+        "restart": "false",
+        "type": "integer"
+    },
+    "wal_buffers": {
+        "byte_unit": 8,
+        "context": "postmaster",
+        "default": -1,
+        "max": 262143,
+        "min": -1,
+        "restart": "true",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "wal_compression": {
+        "context": "superuser",
+        "default": "off",
+        "enum_values": [
+            "pglz",
+            "lz4",
+            "zstd",
+            "on",
+            "off"
+        ],
+        "restart": "false",
+        "since": "9.5",
+        "type": "enum"
+    },
+    "wal_sender_timeout": {
+        "context": "user",
+        "default": 60000,
+        "max": 1800000,
+        "min": 0,
+        "restart": "false",
+        "since": "9.3",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "wal_writer_delay": {
+        "context": "sighup",
+        "default": 200,
+        "max": 10000,
+        "min": 1,
+        "restart": "false",
+        "type": "integer",
+        "unit": "ms"
+    },
+    "wal_writer_flush_after": {
+        "byte_unit": 8,
+        "context": "sighup",
+        "default": 128,
+        "max": 32768,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "work_mem": {
+        "context": "user",
+        "default": 4096,
+        "max": 65536,
+        "min": 64,
+        "restart": "false",
+        "type": "integer",
+        "unit": "KB"
+    }
+}

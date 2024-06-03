@@ -1,0 +1,14 @@
+remote_mode: false
+online_mode: false
+perf_name: throughput
+perf_unit: eps
+vacuum_full: True
+
+benchmark: sysbench
+sysbench_mode: read_write_20G
+
+# saved locally
+knob_definitions: pg_sysbench_50.json
+knob_num: -1
+
+negate: false

@@ -1,0 +1,15 @@
+db_type: pgsql
+remote_mode: false
+online_mode: false
+
+exec_mode: raw
+benchmark: job
+use_pgbench: false
+
+perf_name: latency
+perf_unit: s
+negate: true
+
+# saved locally
+knob_definitions: postgres_120.json
+knob_num: -1

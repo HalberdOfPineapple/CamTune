@@ -1,0 +1,12 @@
+perf_name: throughput
+perf_unit: eps
+vacuum_full: True
+
+benchmark: sysbench
+sysbench_mode: read_write_20G
+
+# saved locally
+knob_definitions: pg_mem_2.json
+knob_num: -1
+
+negate: false

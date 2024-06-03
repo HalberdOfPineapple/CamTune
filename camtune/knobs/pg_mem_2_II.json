@@ -1,0 +1,22 @@
+{
+    "backend_flush_after": {
+        "byte_unit": 8,
+        "context": "user",
+        "default": 0,
+        "max": 256,
+        "min": 0,
+        "restart": "false",
+        "since": "9.6",
+        "type": "integer",
+        "unit": "kB"
+    },
+    "maintenance_work_mem": {
+        "context": "user",
+        "default": 65536,
+        "max": 1048576,
+        "min": 1024,
+        "restart": "false",
+        "type": "integer",
+        "unit": "KB"
+    }
+}
