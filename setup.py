@@ -11,5 +11,5 @@ setup(
     install_requires=load_requirements(),
     author='Wenxuan Li',
     author_email='wl446@cam.ac.uk',
-    description='LA-MCTS-based DBMS configuration tuning framework',
+    description='CamTune: Automatic DBMS configuration tuning framework',
 )
